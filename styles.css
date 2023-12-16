@@ -19,7 +19,7 @@ header{
 }
 
 h1{
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 .navbar{
@@ -108,7 +108,7 @@ h1{
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     background-color: #242423;
     color: #b5e7c7;
     text-shadow: 0 0 5px #ffffffd3;
@@ -143,6 +143,7 @@ h1{
     height: 100px;
     padding-top: 35px;
     border-radius: 5%;
+    box-shadow: 3px 3px 3px #9b9b9b;
 }
 
 .cv a{
@@ -154,4 +155,69 @@ h1{
 .cv a:hover{
     font-size: xx-large;
     text-decoration: underline;
+}
+
+.projetos{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+}
+
+.projetos div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projetos div .card {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    margin: 20px;
+    background-color: #ffffff;
+    padding: 25px;
+    box-shadow: 3px 3px 3px #9b9b9b;
+    border-radius: 4%;
+    max-width: 300px;
+    width: 100%;
+} 
+
+h2, p, img {
+    margin-top: 15px;
+}
+
+.projetos div .card img {
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    width: 100%;
+    background-color: #181818;
+    height: 120px;
+}
+
+footer h2 {
+    text-align: center;
+    color: #6bca8b;
+    margin-top: 0px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer ul li {
+    margin: 10px;
+    
+}
+
+footer ul li img {
+    height: 50px;
+    width: 50px;
 }
