@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #88ffb0;
+}
+
+header{
+    width: 100%;
+    background-color: #181818;
+    font-size: x-large;
+    height: 120px;
+    padding-top: 20px;
+    color: #6bca8b;
+    margin-bottom: 30px;
+}
+
+h1{
+    margin-left: 15px;
+}
+
+.navbar{
+    width: 100%;
+    background-color: #2b2b2b;
+    margin-top: 18px;
+    padding: 10px 0px 10px 0px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+
+.menu li {
+    margin: 0px 20px 0 0;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #6bca8b;
+}
+
+.menu li:hover{
+    text-shadow: 0 0 5px #ffffffd3;
+    text-decoration: underline;
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bio img {
+    max-width: 100%;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px #747a78;
+}
+
+.bio div {
+    background-color: #ffffff;
+    font-size: 1.2em;
+    padding: 30px;
+    margin-top: 15px;
+    border-radius: 5%;
+    max-width: 490px;
+    width: 100%;
+    box-shadow: 3px 3px 3px #9b9b9b;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 25px;
+    font-size: larger;
+}
+
+.skills div {
+    
+    max-width: 720px;
+    width: 100%;
+    
+}
+
+
+.skills div ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    
+}
+
+.skills div ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #242423;
+    color: #b5e7c7;
+    text-shadow: 0 0 5px #ffffffd3;
+    font-size: 1.2em;
+    border-radius: 5%;
+}
+
+.skills div ul li img {
+    height: 130px;
+    width: 115px;
+    margin-top: 10px;
+}
+
+.skills ul li img:hover{
+    height: 160px;
+    width: 145px;
+}
+
+.skills div ul li:hover {
+    box-shadow: 3px 3px 3px #353533;
+}
+
+
+.cv {
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #ffffff;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    height: 100px;
+    padding-top: 35px;
+    border-radius: 5%;
+}
+
+.cv a{
+    text-decoration: none;
+    color: #6bca8b;
+    font-size: 30px;   
+}
+
+.cv a:hover{
+    font-size: xx-large;
+    text-decoration: underline;
+}
