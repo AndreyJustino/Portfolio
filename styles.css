@@ -62,6 +62,18 @@ header h1{
     }
 }
 
+@media (max-width: 320px) {
+    .navbar{
+        margin-top: 0px;
+        font-size: small;
+    }
+
+    header h1{
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+}
+
 .bio{
     display: flex;
     flex-direction: column;
@@ -255,4 +267,22 @@ footer ul li {
 footer ul li img {
     height: 50px;
     width: 50px;
+}
+
+.esfera{
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.esfera:hover{
+    box-shadow: 0 0 10px .25rem #88ffb0;
+}
+
+footer ul li img {
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
 }
