@@ -18,7 +18,7 @@ header{
     margin-bottom: 30px;
 }
 
-h1{
+header h1{
     margin-left: 25px;
 }
 
@@ -50,6 +50,18 @@ h1{
     text-decoration: underline;
 }
 
+@media (max-width: 425px) {
+    .navbar{
+        font-size: medium;
+        margin-top: 28px;
+    }
+
+    header h1{
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+}
+
 .bio{
     display: flex;
     flex-direction: column;
@@ -76,6 +88,29 @@ h1{
     width: 100%;
     box-shadow: 3px 3px 3px #9b9b9b;
 }
+
+@media (max-width: 425px) {
+    .bio div{
+        max-width: 365px;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    .bio div{
+        max-width: 315px;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .bio div{
+        max-width: 260px;
+    }
+    
+}
+
+
 
 .skills{
     display: flex;
