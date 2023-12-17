@@ -8,12 +8,13 @@ body{
     background-color: #88ffb0;
 }
 
+/* Cabeçalho */
+
 header{
     width: 100%;
     background-color: #181818;
     font-size: x-large;
-    height: 120px;
-    padding-top: 20px;
+    height: 130px;
     color: #6bca8b;
     margin-bottom: 30px;
 }
@@ -22,10 +23,17 @@ header h1{
     margin-left: 25px;
 }
 
+.logo{
+    height: 120px;
+    margin-top: 4px;
+    margin-left: 15px;
+}
+
+/* navbar (navegação/menu/opções ) */
+
 .navbar{
     width: 100%;
     background-color: #2b2b2b;
-    margin-top: 18px;
     padding: 10px 0px 10px 0px;
 }
 
@@ -50,29 +58,7 @@ header h1{
     text-decoration: underline;
 }
 
-@media (max-width: 425px) {
-    .navbar{
-        font-size: medium;
-        margin-top: 28px;
-    }
-
-    header h1{
-        margin-top: 20px;
-        margin-left: 25px;
-    }
-}
-
-@media (max-width: 320px) {
-    .navbar{
-        margin-top: 0px;
-        font-size: small;
-    }
-
-    header h1{
-        margin-top: 10px;
-        margin-left: 25px;
-    }
-}
+/* bio (Quem sou?) */
 
 .bio{
     display: flex;
@@ -88,6 +74,7 @@ header h1{
     width: 300px;
     border-radius: 50%;
     box-shadow: 2px 2px 3px #747a78;
+    margin-top: 40px;
 }
 
 .bio div {
@@ -96,33 +83,12 @@ header h1{
     padding: 30px;
     margin-top: 15px;
     border-radius: 5%;
-    max-width: 490px;
+    max-width: 530px;
     width: 100%;
     box-shadow: 3px 3px 3px #9b9b9b;
 }
 
-@media (max-width: 425px) {
-    .bio div{
-        max-width: 365px;
-    }
-    
-}
-
-@media (max-width: 375px) {
-    .bio div{
-        max-width: 315px;
-    }
-    
-}
-
-@media (max-width: 320px) {
-    .bio div{
-        max-width: 260px;
-    }
-    
-}
-
-
+/* mini cards de skills (habilidades */
 
 .skills{
     display: flex;
@@ -139,7 +105,6 @@ header h1{
     width: 100%;
     
 }
-
 
 .skills div ul{
     display: flex;
@@ -178,6 +143,7 @@ header h1{
     box-shadow: 3px 3px 3px #353533;
 }
 
+/* mini card CV */
 
 .cv {
     text-align: center;
@@ -202,6 +168,12 @@ header h1{
 .cv a:hover{
     font-size: xx-large;
     text-decoration: underline;
+}
+
+/* Projetos (atividades) */
+
+h2, p, img {
+    margin-top: 15px;
 }
 
 .projetos{
@@ -231,14 +203,12 @@ header h1{
     width: 100%;
 } 
 
-h2, p, img {
-    margin-top: 15px;
-}
-
 .projetos div .card img {
     width: 200px;
     height: 200px;
 }
+
+/* Rodape (links) */
 
 footer {
     width: 100%;
@@ -269,6 +239,13 @@ footer ul li img {
     width: 50px;
 }
 
+footer ul li img {
+    height: 35px;
+    width: 35px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
 .esfera{
     background-color: white;
     border-radius: 50%;
@@ -280,9 +257,29 @@ footer ul li img {
     box-shadow: 0 0 10px .25rem #88ffb0;
 }
 
-footer ul li img {
-    height: 35px;
-    width: 35px;
-    margin-top: 5px;
-    margin-left: 5px;
+/* Media query */
+
+@media (max-width: 549px){
+     .bio div{
+       /* max-width: 365px;*/
+        max-width: 80%;
+    } 
+
+    .navbar{
+        font-size: medium;
+
+    }
+}
+
+@media (max-width:362px) {
+    .navbar{
+        font-size: small;
+    }
+}
+
+@media (max-width:328px) {
+    .logo{
+        max-width: 300px;
+        width: 100%;
+    }
 }
