@@ -272,8 +272,8 @@ footer ul li img {
 .esfera{
     background-color: white;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
 }
 
 .esfera:hover{
@@ -281,8 +281,8 @@ footer ul li img {
 }
 
 footer ul li img {
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     margin-top: 5px;
     margin-left: 5px;
 }
