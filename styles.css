@@ -19,10 +19,6 @@ header{
     margin-bottom: 30px;
 }
 
-header h1{
-    margin-left: 25px;
-}
-
 .logo{
     height: 120px;
     margin-top: 4px;
@@ -88,22 +84,19 @@ header h1{
     box-shadow: 3px 3px 3px #9b9b9b;
 }
 
-/* mini cards de skills (habilidades */
+/* mini cards de skills (habilidades) */
 
 .skills{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     margin-top: 25px;
     font-size: larger;
 }
 
 .skills div {
-    
     max-width: 720px;
     width: 100%;
-    
 }
 
 .skills div ul{
@@ -111,8 +104,7 @@ header h1{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    list-style-type: none;
-    
+    list-style-type: none; 
 }
 
 .skills div ul li{
@@ -208,6 +200,27 @@ h2, p, img {
     height: 200px;
 }
 
+.button-git{
+    font-size: 0.9em;
+    border-radius: 9px;
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    color:#ffffff;
+    background-color:#000000;
+    border: none;
+    cursor: pointer;
+}
+
+.button-git a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button-git:hover{
+    background-color: #56c77d;
+    transition: 0.5s;
+}
+
 /* Rodape (links) */
 
 footer {
@@ -231,7 +244,6 @@ footer ul{
 
 footer ul li {
     margin: 10px;
-    
 }
 
 footer ul li img {
@@ -261,7 +273,6 @@ footer ul li img {
 
 @media (max-width: 549px){
      .bio div{
-       /* max-width: 365px;*/
         max-width: 80%;
     } 
 
