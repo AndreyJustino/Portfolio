@@ -211,11 +211,6 @@ h2, p, img {
     cursor: pointer;
 }
 
-.button-git a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
 .button-git:hover{
     background-color: #56c77d;
     transition: 0.5s;
