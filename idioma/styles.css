@@ -270,26 +270,32 @@ footer ul li img {
 
 /* Media query */
 
-@media (max-width: 549px){
-     .bio div{
+@media (max-width: 590px){
+    .bio div{
         max-width: 80%;
     } 
+}
 
+@media (max-width: 549px){
     .navbar{
         font-size: medium;
 
     }
 }
 
-@media (max-width:362px) {
+@media (max-width:410px) {
     .navbar{
         font-size: small;
     }
 }
 
-@media (max-width:328px) {
+@media (max-width:353px) {
     .logo{
         max-width: 300px;
         width: 100%;
+    }
+
+    .navbar{
+        font-size: 11px;
     }
 }
