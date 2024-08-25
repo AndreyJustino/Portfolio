@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* 
+    definir tamanho max pra header, main e footer (1200px)
+    centralizar esses elementos no body
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #000000;
+}
+
+header{
+    border: 2px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 4%;
+}
+
+.logo{
+    width: 110px;
+    height: 100px;
+}
+
+.menu-mobile{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    width: 70vw;
+    display: none;
+}
+
+.nav-mobile{
+    text-align: right;
+    background-color: #000000;
+    height: 100vh;
+}
+
+.nav-mobile ul{
+    list-style: none;
+}
+
+.nav-mobile ul li a{
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 20px 4%;
+    display: block;
+}
+
+.nav-mobile ul li a:hover{
+    background-color: #00ff77;
+    color: #000000;
+    font-weight: 600;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 10px 4%;
+    background-color: #000;
+}
+
+.menu-mobile .btn-fechar img, .btn-abrir img{
+    width: 40px;
+    cursor: pointer;
+}
+
+.nav-desktop ul{
+    display: flex;
+    gap: 10px;
+}
+
+.nav-desktop ul li a{
+    color: #a7a7a7ce;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 600;    
+    position: relative;
+}
+
+.nav-desktop ul li a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #00ff77;
+    position: absolute;
+    top: 17px;
+    left: 0;
+    transition: .5s;
+}
+
+.nav-desktop ul li a:hover::after{
+    width: 100%;
+}
+
+.nav-desktop ul li a:hover{
+    color: #fff;
+}
+
+.button-contato{
+    background-color: #00ff77;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.4rem;
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    transition: 0.3s ease;
+}
+
+.button-contato:hover{
+    transform: scale(1.1);
+}
+
+.overlay-menu{
+    background-color: #0000008f;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    display: none;
+}
+
+@media screen and (max-width: 795px){
+    #link-contato, .nav-desktop{
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 796px){
+    .btn-abrir, .menu-mobile, .nav-mobile, .btn-fechar, .overlay-menu{
+        display: none;
+    }
+}
+
+.introducao{
+    border: 2px solid navy;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.introducao .moldura{
+    height: 300px;
+    width: 300px;
+    margin: 15px 0;
+    animation: float 3s ease-in-out infinite;
+}
+
+.introducao .moldura img{
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(-3px -3px 5px #00ff77) drop-shadow(3px 3px 5px #00ff77) contrast(120%) saturate(110%);
+}
+
+.introducao h1, .sobre h1{
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: Inter, helvetica, sans-serif;
+    width: 90vw;
+    max-width: 500px;
+    line-height: 20px;
+}
+
+
+.introducao h1 span{
+    color: #00ff77;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.introducao p, .sobre p{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 90vw;
+    max-width: 500px;
+    font-family: Inter, helvetica, sans-serif;
+    text-align: justify;
+}
+
+.sobre{
+    border: 2px solid red;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sobre .moldura{
+    width: 250px;
+    /* height: 250px; */
+    margin-top: 10px;
+}
+
+.sobre .moldura img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.sobre h1{
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre h1 span{
+    color: #00ff77;
+}
+
+
+@media screen and (min-width: 800px){
+    .introducao{
+        flex-direction: row;
+        padding: 20px;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .sobre{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .sobre .moldura{
+        width: 300px;
+    }
+}
