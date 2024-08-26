@@ -21,11 +21,17 @@ body {
 }
 
 header {
-  border: 2px solid green;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 4%;
+  position: fixed;
+  width: 100vw;
+  height: 130px;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  z-index: 6;
 }
 
 .logo {
@@ -156,7 +162,7 @@ header {
 }
 
 .introducao {
-  border: 2px solid navy;
+    margin-top: 130px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -170,6 +176,11 @@ header {
   50% {
     transform: translateY(-10px);
   }
+}
+
+.introducao{
+    background-color: #00833d3d;
+    padding: 10px;
 }
 
 .introducao .moldura {
@@ -216,7 +227,6 @@ header {
 }
 
 .sobre {
-  border: 2px solid red;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -256,14 +266,27 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 15px;
   }
   .sobre .moldura {
     width: 300px;
   }
 }
 
+.ferramentas{
+    margin-top: 10px;
+}
+
+.ferramentas h1{
+    text-align: center;
+    color: #00ff77;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    margin: 15px 0px;
+    text-transform: uppercase;
+}
+
 .ferramentas .container{
-    border: 2px solid purple;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -280,51 +303,22 @@ header {
     justify-content: center;
     font-size: 1.6rem;
     font-weight: 700;
-    width: 190px;
-    height: 230px;
+    width: 170px;
+    height: 210px;
     padding: 30px 40px;
     border-radius: 20px;
     transition: 0.3s ease;
+    background-color: #1e271e;
+    border: 3px solid #66fb61;
+    color: #6efb61;
 }
 
 .ferramentas .container .card:hover{
     transform: scale(1.1);
 }
 
-.ferramentas .container #card-js{
-    background-color: #25241c;
-    border: 3px solid #f7df1e;
-    color: #f7df1e;
-}
 
-.ferramentas .container #card-react, 
-.ferramentas .container #card-css{
-    background-color: #1e2127;
-    border: 3px solid #61dafb;
-    color: #61dafb;
-}
-
-.ferramentas .container #card-html,
-.ferramentas .container #card-git{
-    background-color: #27211e;
-    border: 3px solid #fb8d61;
-    color: #fb8061;
-}
-
-.ferramentas .container #card-node{
-    background-color: #1e271e;
-    border: 3px solid #66fb61;
-    color: #6efb61;
-}
-
-.ferramentas .container #card-mysql{
-    background-color: #1f1e27;
-    border: 3px solid #cbe6ff;
-    color: #cbe6ff;
-}
-
-.ferramentas .container #card-mysql img,
-.ferramentas .container #card-react img{
-    width: 150px;
+.ferramentas .container .card img{
+    width: 130px;
 }
 
