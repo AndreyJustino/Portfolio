@@ -14,6 +14,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,13 +26,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 4%;
-  position: fixed;
-  width: 100vw;
-  height: 130px;
-  background-color: #000;
-  top: 0;
-  left: 0;
-  z-index: 6;
 }
 
 .logo {
@@ -162,7 +156,6 @@ button:hover {
 }
 
 .introducao {
-    margin-top: 130px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -277,7 +270,8 @@ button:hover {
     margin-top: 10px;
 }
 
-.ferramentas h1{
+.ferramentas h1,
+.projetos h1{
     text-align: center;
     color: #00ff77;
     font-family: Inter, Arial, Helvetica, sans-serif;
@@ -398,4 +392,47 @@ button:hover {
 .projetos button a {
     text-decoration: none;
     color: #000;
+}
+
+.projetos h1{
+  margin: 0;
+}
+
+footer{
+  background-color: #001f0e;
+  margin-top: 10px;
+}
+
+footer .container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+footer .container a{
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container svg{
+  width: 30px;
+  height: 30px;
+}
+
+footer .container .github:hover{
+  background-color: #0d1117;
+  border-radius: 50px;
+}
+
+footer .container .discord:hover{
+  background-color: #313338;
+  border-radius: 50px;
+}
+
+footer .container .linkedin:hover{
+  background-color: #0a66c2;
+  border-radius: 50px;
 }
